@@ -1,0 +1,21 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>QuanLyThuVien_DACN</display-name>
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <servlet-class>com.quanlythuvien.servlet.BorrowBookServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <url-pattern>/student/borrowBook</url-pattern>
+    </servlet-mapping>
+
+</web-app>
